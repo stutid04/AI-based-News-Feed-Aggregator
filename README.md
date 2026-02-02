@@ -127,21 +127,6 @@ The app combines:
 ---
 
 
-
-\## 📈 Evaluation Metrics
-
-
-
-| Metric       | Score |
-
-| Accuracy     | 73.6% |
-
-| F1 (macro)   | 0.68  |
-
-| F1 (weighted)| 0.72 |
-
-
-
 The model learns bias cues such as:
 
 \- Emotionally loaded verbs
