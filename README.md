@@ -1,4 +1,4 @@
-\# 🧭 MBIC — Media Bias \& Information Classifier
+🧭 MBIC — Media Bias \& Information Classifier
 
 
 
@@ -132,13 +132,11 @@ The app combines:
 
 
 
-| Metric        | Score |
-
-|--------------|-------|
+| Metric       | Score |
 
 | Accuracy     | 73.6% |
 
-| F1 (macro)  | 0.68  |
+| F1 (macro)   | 0.68  |
 
 | F1 (weighted)| 0.72 |
 
