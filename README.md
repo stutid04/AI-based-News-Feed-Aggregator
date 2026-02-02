@@ -20,11 +20,11 @@ The app combines:
 
 
 
-\## 🚀 Features
+🚀 Features
 
 
 
-\### 📰 Live News Bias Analysis
+📰 Live News Bias Analysis
 
 \- Fetches real-time news headlines using \*\*NewsAPI\*\*
 
@@ -42,7 +42,7 @@ The app combines:
 
 
 
-\### 🔎 Custom Text Classification
+🔎 Custom Text Classification
 
 \- Paste any headline or paragraph
 
@@ -58,7 +58,7 @@ The app combines:
 
 
 
-\### 📊 Model Overview \& Results
+📊 Model Overview \& Results
 
 \- Explains:
 
@@ -85,8 +85,7 @@ The app combines:
 ---
 
 
-
-\## 🧠 Model Details
+🧠 Model Details
 
 
 
