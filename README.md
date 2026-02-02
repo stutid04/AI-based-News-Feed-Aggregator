@@ -107,23 +107,6 @@ The app combines:
 &nbsp; - PyTorch  
 
 
-
-\### Training Summary
-
-\- Dataset size: ~1,550 labeled samples
-
-\- Split: 80% train / 20% test
-
-\- Optimizer: AdamW
-
-\- Learning rate: 2e-5
-
-\- Epochs: 4
-
-\- Device: Apple MPS / CPU fallback
-
-
-
 ---
 
 
@@ -139,29 +122,6 @@ The model learns bias cues such as:
 
 ---
 
-
-
-\## 🗂️ Project Structure
-
-
-
-```text
-
-├── app.py                     # Streamlit application
-
-├── README.md                  # Project documentation
-
-├── labeled\_dataset.xlsx       # Training dataset
-
-├── out/
-
-│   └── distilbert-mbic-binary/
-
-│       └── best/              # Saved fine-tuned model
-
-└── .streamlit/
-
-&nbsp;   └── secrets.toml           # NewsAPI key (not committed)
 
 
 
