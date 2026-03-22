@@ -119,8 +119,5 @@ The model learns bias cues such as:
 
 
 
----
-
-
 
 
