@@ -1,1 +1,136 @@
+Here’s a clean, no-nonsense **Docker README** you can drop into your repo. It assumes a typical Python/Streamlit + model setup (adjust names if needed).
+
+---
+
+# 🐳 Docker Setup Guide
+
+This project is containerized using Docker to ensure consistent environments across development and deployment.
+
+## 📦 Prerequisites
+
+Make sure you have installed:
+
+* Docker (v20+ recommended)
+* Docker Compose (optional, if using multi-container setup)
+
+---
+
+## 🚀 Build the Docker Image
+
+From the root directory (where your `Dockerfile` exists):
+
+```bash
+docker build -t text-classifier-app .
+```
+
+---
+
+## ▶️ Run the Container
+
+```bash
+docker run -p 8501:8501 text-classifier-app
+```
+
+* The app will be available at:
+  👉 [http://localhost:8501](http://localhost:8501)
+
+---
+
+## 🔁 Rebuild (After Changes)
+
+If you modify code or dependencies:
+
+```bash
+docker build --no-cache -t text-classifier-app .
+```
+
+---
+
+## 🧪 Run in Interactive Mode (Debugging)
+
+```bash
+docker run -it text-classifier-app /bin/bash
+```
+
+---
+
+## 📁 Project Structure (Relevant Files)
+
+```
+.
+├── Dockerfile
+├── .dockerignore
+├── requirements.txt
+├── app.py (or main entry point)
+└── model/ (if applicable)
+```
+
+---
+
+## ⚙️ Environment Variables (Optional)
+
+If your app uses environment variables:
+
+```bash
+docker run -p 8501:8501 \
+  -e ENV=production \
+  text-classifier-app
+```
+
+---
+
+## 🚫 .dockerignore Notes
+
+The `.dockerignore` file ensures unnecessary files (like `.git`, cache, datasets, etc.) are excluded from the image to keep it lightweight.
+
+---
+
+## 🧠 Common Issues
+
+**1. Port already in use**
+
+```bash
+Error: bind: address already in use
+```
+
+👉 Change port mapping:
+
+```bash
+docker run -p 8502:8501 text-classifier-app
+```
+
+---
+
+**2. Module not found**
+👉 Ensure all dependencies are in `requirements.txt`
+
+---
+
+**3. Model not loading**
+👉 Check:
+
+* File paths inside container
+* Whether model is copied in Dockerfile (`COPY` command)
+
+---
+
+## 🧼 Clean Up
+
+Remove unused containers/images:
+
+```bash
+docker system prune -a
+```
+
+---
+
+## 📌 Notes
+
+* Keep your image lean (avoid unnecessary files)
+* Use `.dockerignore` aggressively
+* Pin dependency versions for reproducibility
+
+---
+
+If you want, I can tailor this exactly to your Dockerfile (right now this is a solid generic version, but I can make it “perfect-fit” instead of “one-size-fits-all”).
 
